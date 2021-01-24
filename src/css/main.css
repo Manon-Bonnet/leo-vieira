@@ -85,6 +85,13 @@ main h1{
   background-attachment: fixed;
 }
 
+.index-first-sect div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .index-section{
   height: 80vh;
   display: flex;
@@ -137,17 +144,32 @@ main h1{
     padding-top: 50px;
   }
 
+  .index-first-sect{
+    height: 100vh;
+    align-items: flex-end;
+    padding-right: 10%;
+  }
+
   .burger-menu-icone{
     display: none;
+  }
+
+  .index-second-sect{
+    text-align: left;
+    justify-content: left;
+    align-items: baseline;
+    height: 60vh;
+    padding-left: 10%;
   }
 }
 
 @media (min-width: 1200px){
-  body{
-    display: flex;
-  }
-
   main{
     width: 300%;
   }
+
+  header{
+    max-width: 300px;
+  }
 }
+
