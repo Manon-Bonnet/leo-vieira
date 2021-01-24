@@ -79,7 +79,7 @@ main h1{
 }
 
 .background-hero{
-  background-image: url("../images/20201202_102848.jpg");
+  background-image: url("../images/20201202_102848-800.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -130,7 +130,7 @@ main h1{
   }
 
   .background-hero{
-    background-position: 0%;
+    background-image: url("../images/20201202_102848-1500.jpg");
   }
 
   nav ul{
@@ -173,3 +173,14 @@ main h1{
   }
 }
 
+@media (min-width: 1440px){
+  .background-hero{
+    background-image: url("../images/20201202_102848-2000.jpg");
+  }
+}
+
+@media (min-width: 2500px){
+  .background-hero{
+    background-image: url("../images/20201202_102848.jpg");
+  }
+}
