@@ -19,10 +19,17 @@ body{
   background-color: black;
   text-align: center;
   color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
 }
 
 h1{
   font-size: 5em;
+  text-transform: uppercase;
+}
+
+h2, h1{
+  font-weight: inherit;
 }
 
 a{
@@ -71,16 +78,17 @@ nav svg{
   z-index: 2;
 }
 
+.logo:hover{
+  text-decoration: none;
+  opacity: 0.5;
+}
+
 /* main */
 
 main{
   font-family: syncopate;
   letter-spacing: 0.1em;
   font-weight: 400;
-}
-
-main h1{
-  text-transform: uppercase;
 }
 
 .background-hero{
