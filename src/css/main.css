@@ -28,6 +28,11 @@ h1{
   text-transform: uppercase;
 }
 
+.head-title{
+  font-size: 2em;
+  margin-top: 50px;
+}
+
 h2, h1{
   font-weight: inherit;
 }
@@ -113,6 +118,48 @@ main{
   flex-direction: column;
 }
 
+/* galery */
+
+.figure-galery{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: auto;
+  justify-content: center;
+}
+
+.figure-galery figure{
+  width: 100%;
+  height: 400px;
+  margin: 1%;
+}
+
+figure img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.chapo{
+  margin: 10px 20px 40px;
+  font-size: 1em;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@media (min-width: 400px){
+  .figure-galery figure{
+    height: 300px;
+    width: 48%;
+  }
+}
+
+@media (min-width: 600px){
+  .figure-galery figure{
+    height: 400px;
+  }
+}
+
+
 @media (min-width: 768px){
   body{
     display: flex;
@@ -132,6 +179,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 200px;
     transform: translateX(-50%);
   }
 
@@ -174,6 +222,14 @@ main{
     height: 60vh;
     padding-left: 10%;
   }
+
+}
+
+@media (min-width: 1000px){
+  .figure-galery figure{
+    width: 30%;
+    height: 400px;
+  }
 }
 
 @media (min-width: 1200px){
@@ -189,6 +245,11 @@ main{
 @media (min-width: 1440px){
   .background-hero{
     background-image: url("../images/20201202_102848-2000.jpg");
+  }
+
+  .figure-galery figure{
+    width: 20%;
+    max-width: 300px;
   }
 }
 
