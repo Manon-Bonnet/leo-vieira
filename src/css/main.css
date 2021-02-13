@@ -250,6 +250,11 @@ img{
   text-decoration: underline;
 }
 
+video{
+  width: 90%;
+  outline: none;
+}
+
 
 @media (min-width: 400px){
   .figure-galery figure{
