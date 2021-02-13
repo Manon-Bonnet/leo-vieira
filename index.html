@@ -10,9 +10,9 @@
 <body>
   <svg xmlns="http://www.w3.org/2000/svg" height="0" width="0" class="icones-definition">
     <symbol id="burger-menu" viewBox="0 0 40 40">
-      <rect width="40" height="6.7" rx="3.35" fill="#f6f6f6"/>
-      <rect y="16.65" width="40" height="6.7" rx="3.35" fill="#f6f6f6"/>
-      <rect y="33.3" width="40" height="6.7" rx="3.35" fill="#f6f6f6"/>
+      <rect class="rect" x=0 width="40" height="6.7" rx="3.35" fill="#f6f6f6"/>
+      <rect class="rect" x=0 y="16.65" width="40" height="6.7" rx="3.35" fill="#f6f6f6"/>
+      <rect class="rect" x=0 y="33.3" width="40" height="6.7" rx="3.35" fill="#f6f6f6"/>
     </symbol>
   </svg>
   <header>
@@ -22,11 +22,11 @@
           <h1 class="second-level-text">Léo Vieira</h1>
         </a>
         <h2 class="header-h2">Acteur</h2>
-        <nav class="open-menu">
+        <nav>
           <svg xmlns="http://www.w3.org/2000/svg" class="burger-menu-icone" width="40" height="40" viewBox="0 0 40 40">
             <use xlink:href="#burger-menu"></use>
           </svg>
-          <ul>
+          <ul class="menu">
             <li>
               <a href="index.html" class="active">Acteur Book Léo Vieira</a>
             </li>
@@ -75,6 +75,7 @@
       </ul>
     </section>
   </main>
+  <script src="src/script/burger.js"></script>
 
 </body>
 </html>

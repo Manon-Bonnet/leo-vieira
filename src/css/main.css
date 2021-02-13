@@ -101,6 +101,25 @@ nav ul{
   overflow: hidden;
 }
 
+.open-menu{
+  width: 100%;
+  height: 100%;
+}
+
+.rect1{
+  transform: rotate(-45deg);
+  fill: white;
+}
+
+.rect2{
+  display: none;
+}
+
+.rect3{
+  transform: rotate(45deg);
+  fill: white;
+}
+
 nav svg{
   position: relative;
   z-index: 2;
