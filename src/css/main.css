@@ -145,6 +145,7 @@ main{
   font-family: syncopate;
   letter-spacing: 0.1em;
   font-weight: 400;
+  position: relative;
 }
 
 .background-hero{
@@ -183,6 +184,10 @@ main{
   width: 100%;
   height: 400px;
   margin: 1%;
+}
+
+.figure-galery figure:hover{
+  cursor: pointer;
 }
 
 img{
@@ -255,6 +260,58 @@ video{
   width: 90%;
   outline: none;
 }
+
+.hidden{
+  opacity: 0;
+  z-index: -10;
+}
+
+/* Image onclick */
+
+.fullWidthImage{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.8);
+}
+
+.fullWidthImage img{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.croce{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.croce span {
+  width: 34px;
+  height: 3px;
+  display: block;
+  background-color: white;
+}
+
+.croce span:nth-child(1){
+  transform-origin: top left;
+  transform: rotate(45deg);
+}
+
+.croce span:nth-child(2){
+  transform-origin: bottom left;
+  transform: translateY(20px) rotate(-45deg);
+}
+
+.croce:hover{
+  cursor: pointer;
+}
+
 
 
 @media (min-width: 400px){
