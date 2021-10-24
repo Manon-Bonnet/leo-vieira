@@ -46,6 +46,7 @@ h2{
 h3{
   margin-bottom: 5px;
   font-weight: 600;
+  padding-right: 10px;
 }
 
 a{
@@ -343,6 +344,10 @@ video{
   
   .cv .firstthird li div{
     flex-direction: row;
+  }
+
+  .date{
+    text-align: right;
   }
 }
 
